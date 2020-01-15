@@ -11,7 +11,7 @@ def build_options_url(ticker, date = None):
     
     """Constructs the URL pointing to options chain"""
        
-    url = "https://finance.yahoo.com/quote/" + ticker + "/options?p=" + ticker
+    url = "https://in.finance.yahoo.com/quote/" + ticker + ".NS/options?p=" + ticker + ".NS"
 
     if date is not None:
         url = url + "&date=" + str(int(pd.Timestamp(date).timestamp()))
