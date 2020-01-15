@@ -30,7 +30,7 @@ def build_url(ticker, start_date = None, end_date = None):
         start_seconds = int(pd.Timestamp(start_date).timestamp())
         
         
-    site = "https://finance.yahoo.com/quote/" + ticker + "/history?period1=" + str(int(start_seconds)) + "&period2=" + \
+    site = "https://in.finance.yahoo.com/quote/" + ticker + ".NS/history?period1=" + str(int(start_seconds)) + "&period2=" + \
             str(end_seconds) + "&interval=1d&filter=history&frequency=1d"
     return site
 
